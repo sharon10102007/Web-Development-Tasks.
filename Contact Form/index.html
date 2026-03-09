@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    
     <title>Contact Form</title>
 </head>
 <body>
-    
-    <h1>Contact @Bosscoder</h1>
-    <form>
-        <table>
-            <tr><b>Name:</b></tr><br>
-            <tr><input type="text" placeholder="Your name"></tr><br>
-            <tr><b>Email:</b></tr><br>
-            <tr><input type="text" placeholder="Your email"></tr><br>
-            <tr><b>Phone Number:</b></tr><br>
-            <tr><input type="text" placeholder="Your phone number"></tr><br>
-            <tr><b>Message:</b></tr><br>
-            <textarea rows="4" placeholder="Write your message here..."></textarea><br>
-            <hr><br>
-            <button type="submit">Send Message</button>
-
-        </table>
-        </form>
-        
+    <center>
+    <table border="1" cellpadding="10">
+            <tr>
+                <td colspan="2" align="center">
+                <h2>Contact @Bosscoder</h2>
+                </td>
+            </tr>    
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="text" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Message:</td>
+                <td><textarea name="message" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" >
+                    <button type="submit">Send Message</button>
+                </td>
+            </tr>
+    </table>
+    </center>
 </body>
 </html>
