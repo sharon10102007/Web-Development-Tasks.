@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>My Photo Gallery</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:white;
+    margin:0;
+    padding:20px;
+    text-align:center;
+}
+
+h1{
+    margin-bottom:30px;
+}
+
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    max-width:900px;
+    margin:auto;
+}
+
+
+
+.gallery-item{
+    background:white;
+    border-radius:10px;
+    border-color: black;
+    border-style: solid;
+    overflow:hidden;
+    transition:transform 0.3s;
+}
+
+.gallery-item:hover{
+    transform:scale(1.05);
+}
+
+.gallery img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+
+.description{
+    padding:10px;
+    font-weight:500;
+}
+
+
+@media (max-width:768px){
+
+.gallery{
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>My Photo Gallery</h1>
+
+<div class="gallery">
+
+<div class="gallery-item">
+<img src="Misty Forest .jpg">
+<div class="description">Misty Forest
+    
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="Desert Dunes.jpg">
+<div class="description">Desert Dunes</div>
+</div>
+
+<div class="gallery-item">
+<img src="Sunflower.jpg">
+<div class="description">Sunflower</div>
+</div>
+
+<div class="gallery-item">
+<img src="Lone tree.jpg">
+<div class="description">Lone Tree</div>
+</div>
+
+<div class="gallery-item">
+<img src="Mountain lake.jpg">
+<div class="description">Mountain Lake</div>
+</div>
+
+<div class="gallery-item">
+<img src="Temple.jpg">
+<div class="description">Temple</div>
+</div>
+
+</div>
+
+</body>
+</html>
